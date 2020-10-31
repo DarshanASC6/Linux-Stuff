@@ -12,14 +12,19 @@ import os
 
 applications = ['steam', 'lutris', 'vim', 'discord']
 
+appCommandStr = ' '.join((applications))
+
+print(appCommandStr)
+
 # Store all the list items into a string so I don't have to do 5
 # million "sudo's"
 
 # Source: https://stackoverflow.com/questions/25735389/storing-items-in-a-list-for-python
 
-# os.system("sudo" + )
+# os.system('sudo'+ )
+packageManager = 'apt-get'
 
-print('My name is {}'.format(applications)
+print('sudo {} install {}'.format(packageManager, appCommandStr))
 
 # import subprocess
 
