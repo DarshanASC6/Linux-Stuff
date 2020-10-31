@@ -1,32 +1,25 @@
 import os
 
 # List various programs to install:
-# Steam
-# Vim
-# Lutris
-# GIMP
-# Zoom
-# Discord
+# Libre Office
+# 
 
-# Source: https://stackabuse.com/executing-shell-commands-with-python/
-
-applications = ['steam', 'lutris', 'vim', 'discord']
+applications = ['steam', 'lutris', 'vim', 'discord', 'gimp', 'git']
 
 appCommandStr = ' '.join((applications))
 
-print(appCommandStr)
-
-# Store all the list items into a string so I don't have to do 5
-# million "sudo's"
-
-# Source: https://stackoverflow.com/questions/25735389/storing-items-in-a-list-for-python
-
-# os.system('sudo'+ )
 packageManager = 'apt-get'
 
-print('sudo {} install {}'.format(packageManager, appCommandStr))
+# Need to find a command that lets me list out the package manager installed/used 
 
-# import subprocess
+# os.system('sudo {} install {}'.format(packageManager, appCommandStr))
 
-# list_files = subprocess.run(["cd"])
-# print("The exit code was: %d" % list_files.returncode)
+# Sources used:
+# Source: https://stackoverflow.com/questions/25735389/storing-items-in-a-list-for-python
+# Source: https://stackabuse.com/executing-shell-commands-with-python/
+# Potentially useful: https://unix.stackexchange.com/questions/71136/how-can-i-see-which-package-manager-is-running
+
+# PITA Install Applications
+# Source (VS Code): https://duckduckgo.com/?t=ffab&q=install+vscode+from+terminal&ia=web
+# Source (Zoom): https://support.zoom.us/hc/en-us/articles/204206269-Installing-or-updating-Zoom-on-Linux#h_adcc0b66-b2f4-468b-bc7a-12c182f354b7
+# Source (LibreOffice): https://wiki.documentfoundation.org/Documentation/Install/Linux#Terminal-Based_Install
