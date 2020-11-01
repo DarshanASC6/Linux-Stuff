@@ -8,12 +8,13 @@ applications = ['steam', 'lutris', 'vim', 'discord', 'gimp', 'git']
 
 appCommandStr = ' '.join((applications))
 
-packageManager = input('Enter your package manager')
+packageManager = input('Enter your package manager: ')
 
 # Need to find a command that lets me list out the package manager installed/used 
 # Edit: There doesn't seem to be a command to find the package manager, as fas as I know. So in the meantime Imma just use user input and pray they can spell properly.
 
 # os.system('sudo {} install {}'.format(packageManager, appCommandStr))
+print('sudo {} install {}'.format(packageManager, appCommandStr))
 
 # Sources used:
 # Source: https://stackoverflow.com/questions/25735389/storing-items-in-a-list-for-python
