@@ -5,11 +5,11 @@ import os
 
 applications = ['steam', 'lutris', 'vim', 'discord', 'gimp', 'git', 'firefox']
 
+possiblePackageManagers = [ "snap", "flatpack", "apt", "yum", "dnf", "pkg", "apt-get", "pacman -S", "zypper" ]
+
 appCommandStr = ' '.join((applications))
 
 packageManager = input('Enter your package manager: ')
-
-possiblePackageManagers = [ "snap", "flatpack", "apt", "yum", "dnf", "pkg", "apt-get", "pacman -S", "zypper" ]
 
 while True:
     if packageManager in possiblePackageManagers:
@@ -20,6 +20,14 @@ while True:
     else:
         print("Not a valid package manager, sorry")
         packageManager = input('Enter your package manager: ')
+
+# ------------------------------------------------------------------
+# Special functions for PITA applications
+def PITA_install(downloadLink, packageManager, commands):
+    downloadLink = input('Enter the download link for the application: ')
+    packageManager = input('Enter your package manager: ')
+    commands = input('Enter any special commands from the instructions on the website: ')
+
 
 # ------------------------------------------------------------------
 # Sources used:
