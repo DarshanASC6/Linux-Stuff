@@ -11,14 +11,16 @@ packageManager = input('Enter your package manager: ')
 
 possiblePackageManagers = [ "snap", "flatpack", "apt", "yum", "dnf", "pkg", "apt-get", "pacman -S", "zypper" ]
 
-if packageManager in possiblePackageManagers:
-    # Need to find a command that lets me list out the package manager installed/used 
-    # Edit: There doesn't seem to be a command to find the package manager, as fas as I know. So in the meantime Imma just use user input and pray they can spell properly.
-    # os.system('sudo {} install {}'.format(packageManager, appCommandStr))
-    print('sudo {} install {}'.format(packageManager, appCommandStr))
+while True:
+    if packageManager in possiblePackageManagers:
+        # os.system('sudo {} install {}'.format(packageManager, appCommandStr))
+        print('sudo {} install {}'.format(packageManager, appCommandStr))
+        break
 
-else:
-    print("Not a valid package manager, sorry")
+    else:
+        print("Not a valid package manager, sorry")
+        packageManager = input('Enter your package manager: ')
+
 
 # Sources used:
 # Source: https://stackoverflow.com/questions/25735389/storing-items-in-a-list-for-python
