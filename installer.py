@@ -22,14 +22,6 @@ while True:
         packageManager = input('Enter your package manager: ')
 
 # ------------------------------------------------------------------
-# Special functions for PITA applications
-def PITA_install(downloadLink, packageManager, commands):
-    downloadLink = input('Enter the download link for the application: ')
-    packageManager = input('Enter your package manager: ')
-    commands = input('Enter any special commands from the instructions on the website: ')
-
-
-# ------------------------------------------------------------------
 # Sources used:
 # Source: https://stackoverflow.com/questions/25735389/storing-items-in-a-list-for-python
 # Source: https://stackabuse.com/executing-shell-commands-with-python/
