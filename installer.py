@@ -3,7 +3,7 @@ import os
 # List various programs to install:
 # 
 
-applications = ['steam', 'lutris', 'vim', 'discord', 'gimp', 'git', 'firefox', 'libreoffice', 'vlc', 'code --classic']
+applications = ['steam', 'lutris', 'vim', 'discord', 'gimp', 'git', 'firefox', 'libreoffice', 'vlc']
 
 possiblePackageManagers = [ "snap", "flatpack", "apt", "yum", "dnf", "pkg", "apt-get", "pacman -S", "zypper" ]
 
