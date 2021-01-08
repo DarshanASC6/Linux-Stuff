@@ -32,6 +32,10 @@ sudo apt-get install vlc
 #Puthon 3
 sudo apt-get install python3
 
+#Set up vim plug installer
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 echo "Finished installing all software"
 
 'Sources:
