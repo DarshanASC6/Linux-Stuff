@@ -1,36 +1,15 @@
 #!/bin/bash
 
-sudo apt-get update
-
-#Steam
-sudo apt-get install steam 
-
-#Lutris
-sudo apt-get install lutris 
+sudo apt update
 
 #Vim
-sudo apt-get install vim 
+sudo apt install vim 
 
-#Discord
-sudo apt-get install discord 
+#qBittorrent
+sudo apt install qbittorrent
 
-#Gimp
-sudo apt-get install gimp 
-
-#Git
-sudo apt-get install git 
-
-#FireFox
-sudo apt-get install firefox 
-
-#LibreOffice
-sudo apt-get install libreoffice 
-
-#VLC Media Player
-sudo apt-get install vlc 
-
-#Puthon 3
-sudo apt-get install python3
+#Python 3
+sudo apt install python3
 
 #Set up vim plug installer
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
