@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt update
+sudo apt update && sudo apt upgrade
 
 #Steam
 sudo apt install steam 
@@ -29,8 +29,11 @@ sudo apt install libreoffice
 #VLC Media Player
 sudo apt install vlc 
 
-#Puthon 3
+#Python 3
 sudo apt install python3
+
+#Neofetch
+sudo apt install neofetch
 
 #Set up vim plug installer
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
