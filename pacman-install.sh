@@ -25,4 +25,23 @@ sudo pacman -S libreoffice
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-echo "Finished installing all software"
+echo "Finished installing applications, installing window manager stuff now."
+
+# Install dwm, st and dmenu in .config folder
+
+dwm="https://github.com/DarshanASC6/dwm"
+
+st="https://git.suckless.org/st"
+
+dmenu="https://git.suckless.org/dmenu"
+
+# Clone my build of dwm
+git clone "$dwm" ".config"
+
+# Clone st from the source
+git clone "$st" ".config"
+
+# Clone dmenu from the source
+git clone "$dmenu" ".config"
+
+echo "Be sure to make a clean install in each folder when finished."
