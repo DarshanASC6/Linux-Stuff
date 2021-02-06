@@ -50,4 +50,8 @@ git clone "$st" ".config"
 #Clone dmenu from the source
 git clone "$dmenu" ".config"
 
+# Run "sudo make clean install" in each folder
+# https://stackoverflow.com/questions/10523415/execute-command-on-all-files-in-a-directory
+# https://unix.stackexchange.com/questions/550628/how-to-run-a-command-on-every-folder-within-a-directory
+
 echo "Be sure to make a clean install in each folder when finished."
