@@ -27,6 +27,9 @@ sudo pacman -S zathura
 #Zathura add-ons for PDF and EPUB support
 sudo pacman -S zathura-pdf-mupdf
 
+#mpv Media Player
+sudo pacman -S zathura
+
 #Set up vim plug installer
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -35,7 +38,7 @@ echo "Finished installing applications, installing window manager stuff now."
 
 #Install dwm, st and dmenu in .config folder
 
-dwm="https://github.com/DarshanASC6/dwm"
+dwm="https://git.suckless.org/dwm"
 
 st="https://git.suckless.org/st"
 
