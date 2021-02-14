@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #FireFox
-sudo pacman -Syu firefox
+sudo pacman -S firefox
 
 #VLC Media Player
 sudo pacman -S vlc
@@ -30,8 +30,17 @@ sudo pacman -S zathura-pdf-mupdf
 #mpv Media Player
 sudo pacman -S zathura
 
+#xwallpaper Wallpaper config
+sudo pacman -S xwallpaper
+
+#xsetroot
+sudo pacman -S xorg-xsetroot
+
 #Set up vim plug installer
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+#One final update
+sudo pacman -Syu
 
 echo "Finished installing applications, installing window manager stuff now."
