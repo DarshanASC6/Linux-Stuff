@@ -10,15 +10,17 @@ dmenu="https://git.suckless.org/dmenu"
 
 #Clone the latest build of dwm from source
 git clone "$dwm" ".config"
+cd dwm
+sudo make clean install
 
 #Clone the latest build of st from source
 git clone "$st" ".config"
+cd st
+sudo make clean install
 
 #Clone the lates build of dmenu from the source
 git clone "$dmenu" ".config"
+cd dmenu
+sudo make clean install
 
-# Run "sudo make clean install" in each folder
-# https://stackoverflow.com/questions/10523415/execute-command-on-all-files-in-a-directory
-# https://unix.stackexchange.com/questions/550628/how-to-run-a-command-on-every-folder-within-a-directory
-
-echo "Be sure to make a clean install in each folder when finished."
+echo "Finished all tasks"
