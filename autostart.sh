@@ -12,7 +12,7 @@ pwr () {
 dte () {
 	icon=""
 	date="$(date '+%a %b %Y')"
-	hour_minute="$(date '+%I:%M ')"
+	hour_minute="$(date '+%I:%M%^P ')"
 	printf "%s %s" "$icon" "$hour_minute" "$date"
 }
 
@@ -22,9 +22,39 @@ volume () {
 	printf "%s %s" "$icon" "$volume"
 }
 
-# DWM Status bar config
+ntwrk () {
+	icon=""
+	name=$(iw wlp2s0 link | grep "SSID" | awk '{print $2}')
+	printf "%s %s" "$icon" "$name"
+}
+
+cpu () {
+	icon=""
+	cpuinfo=$[100-$(vmstat 1 2|tail -1|awk '{print $15}')]%
+	printf "%s %s" "$icon" "$cpuinfo"
+}
+
+memory () {
+	# Memory used in percentage
+	icon=""
+	ram=$(free | awk '/Mem/{printf("% .f%%"), $3/$2*100} /buffers\/cache/{printf(", buffers: %.2f%"), $4/($3+$4)*100}')
+	printf "%s %s" "$icon" "$ram"
+}
+
+updates () {
+	if ! updates_arch=$(checkupdates 2> /dev/null | wc -l ); then
+		updates_arch=0
+	fi
+
+	if ! updates_aur=$(yay -Qum 2> /dev/null | wc -l); then
+		updates_aur=0
+	fi
+
+	echo "$updates_arch  $updates_aur"
+}
+
 while true; do
-	xsetroot -name "$(volume) | $(dte) | $(pwr)" 
+	xsetroot -name "$(volume) | $(ntwrk) |$(dte) | $(pwr)" 
 	sleep 1s
 done &
 
