@@ -31,7 +31,7 @@ sudo pacman -S zathura-pdf-mupdf
 sudo pacman -S zathura
 
 #xwallpaper Wallpaper config
-sudo pacman -S xwallpaper
+sudo pacman -S nitrogen
 
 #xsetroot
 sudo pacman -S xorg-xsetroot
@@ -43,4 +43,4 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 #One final update
 sudo pacman -Syu
 
-echo "Finished installing applications, installing window manager stuff now."
+echo "Finished installing applications."

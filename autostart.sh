@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Set wallpaper for dwm
-xwallpaper --zoom ~/Pictures/Wallpapers/wallpaper.jpg
+nitrogen --set-zoom-fill ~/Pictures/Wallpapers/wallpaper1.jpg
 
 pwr () {
  	icon=""
