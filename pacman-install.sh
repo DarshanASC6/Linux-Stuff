@@ -1,40 +1,20 @@
 #!/bin/sh
+#Installs the following programs:
 
 #FireFox
-sudo pacman -S firefox
-
 #VLC Media Player
-sudo pacman -S vlc
-
 #Neofetch
-sudo pacman -S neofetch
-
 #Git
-sudo pacman -S git
-
 #Vim
-sudo pacman -S vim
-
 #Lollypop Music Player
-sudo pacman -S lollypop
-
 #Libre Office
-sudo pacman -S libreoffice
-
 #Zathura PDF Reader
-sudo pacman -S zathura
-
 #Zathura add-ons for PDF and EPUB support
-sudo pacman -S zathura-pdf-mupdf
-
 #mpv Media Player
-sudo pacman -S zathura
-
 #xwallpaper Wallpaper config
-sudo pacman -S nitrogen
-
 #xsetroot
-sudo pacman -S xorg-xsetroot
+
+sudo pacman -S firefox vlc neofetch git vim lollypop libreoffice zathura zathura-pdf-mupdf nitrogen xorg-xsetroot
 
 #Set up vim plug installer
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -43,4 +23,4 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 #One final update
 sudo pacman -Syu
 
-echo "Finished installing applications."
+echo "Finished"
