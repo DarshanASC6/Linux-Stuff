@@ -12,11 +12,13 @@ dmenu="https://git.suckless.org/dmenu"
 git clone "$dwm" ".config"
 cd dwm
 sudo make clean install
+cd ..
 
 #Clone the latest build of st from source
 git clone "$st" ".config"
 cd st
 sudo make clean install
+cd ..
 
 #Clone the lates build of dmenu from the source
 git clone "$dmenu" ".config"
