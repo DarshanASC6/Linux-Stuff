@@ -3,43 +3,32 @@
 sudo apt update && sudo apt upgrade
 
 #Steam
-sudo apt install steam 
 
 #Lutris
-sudo apt install lutris 
 
 #Vim
-sudo apt install vim 
 
 #Discord
-sudo apt install discord 
 
 #Gimp
-sudo apt install gimp 
-
-#Git
-sudo apt install git 
 
 #FireFox
-sudo apt install firefox 
 
 #LibreOffice
-sudo apt install libreoffice 
 
 #VLC Media Player
-sudo apt install vlc 
 
 #Python 3
-sudo apt install python3
 
 #Neofetch
-sudo apt install neofetch
+
+sudo apt install steam lutris vim discord git firefox libreoffice vlc python3 neofetch
 
 #Set up vim plug installer
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-echo "Finished installing all software"
+echo "Finished"
 
 'Sources:
 https://www.linuxquestions.org/questions/programming-9/bash-determine-what-package-manager-to-use-817036/
