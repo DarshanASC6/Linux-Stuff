@@ -1,18 +1,20 @@
 #!/bin/bash
 
+#Update and upgrade everything
+
 sudo apt update && sudo apt upgrade
 
-#Vim
-sudo apt install vim 
+#Install the following programs:
 
-#qBittorrent
-sudo apt install qbittorrent
+#Vim
+
+#qBittorrent-nox
 
 #Python 3
-sudo apt install python3
 
 #Neofetch
-sudo apt install neofetch
+
+sudo apt install vim qbittorrent-nox python3 neofetch
 
 #Set up vim plug installer
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
